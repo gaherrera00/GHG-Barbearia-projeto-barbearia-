@@ -4,248 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GHG Barbearia - Transforme Seu Visual em Minutos</title>
-    <meta name="description"
-        content="Barbearia premium com mais de 7 anos de experiência. Corte profissional, barba modelada e atendimento VIP. Agende agora!">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>GHG Barbearia</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <a href="#">GHG</a>
+
+    <!-- navbar -->
+    <header class="cabecalho">
+        <div class="container-cabecalho">
+            <h1 class="logo">GHG Barbearia</h1>
+            <nav class="menu">
+                <a class="menu-link-usando">Home</a>
+                <a class="menu-link" href="./sobreNos.html">Sobre</a>
+                <a class="menu-link" href="./agenda.html">Agendar</a>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="container">
-            <h1 class="hero-headline">Transforme Seu Visual em Minutos na Barbearia GHG</h1>
-            <p class="hero-subheadline">Onde Estilo Encontra Precisão</p>
-            <a href="#agenda" class="botao-personalizado">Agende Agora e Experimente Atendimento Premium!</a>
+    <!-- secao principal -->
+    <section id="home" class="secao-principal">
+        <div class="container-principal">
+            <h2 class="titulo">Transforme seu visual com estilo e precisão</h2>
+            <p class="descricao">Na GHG, você encontra cortes modernos, barba modelada, massagem relaxante e atendimento
+                VIP.</p>
+            <a class="botao-agendar" href="./agenda.html">Agendar Horário</a>
         </div>
     </section>
 
-    <!-- DIFERENCIAL SECTION -->
-    <section class="diferencial">
-        <div class="container">
-            <h2>Por que a GHG é Diferente?</h2>
-            <p>Na GHG, não fazemos apenas cortes de cabelo — <strong>criamos experiências transformadoras</strong>.
-                Cansado de barbearias que tratam você como mais um número? Aqui, cada cliente é tratado como <strong>VIP
-                    desde o primeiro minuto</strong>.</p>
-        </div>
-    </section>
-
-    <!-- PROBLEMA SECTION -->
-    <section class="problema">
-        <div class="container">
-            <h2>Você já passou por isso?</h2>
-            <p>Sabemos exatamente como é frustrante...</p>
-            <div class="problema-grid">
-                <div class="problema-item">
-                    <h3>Cortes Mal Feitos</h3>
-                    <p>Sair da barbearia pior do que entrou</p>
-                </div>
-                <div class="problema-item">
-                    <h3>Atrasos Constantes</h3>
-                    <p>Perder tempo esperando sem respeito</p>
-                </div>
-                <div class="problema-item">
-                    <h3>Barbeiros Distraídos</h3>
-                    <p>Atendimento sem atenção aos detalhes</p>
-                </div>
+    <!-- secao de servicos -->
+    <section id="servicos" class="secao-servicos">
+        <h2 class="titulo">Nossos Serviços</h2>
+        <div class="lista-servicos">
+            <div class="servico">
+                <h3 class="servico-titulo">✂️ Corte Profissional</h3>
+                <p class="servico-desc">Corte personalizado com atenção aos detalhes</p>
             </div>
-            <p><strong>Nós também passamos por isso. Por isso criamos a GHG:</strong> para entregar excelência em cada
-                atendimento.</p>
-        </div>
-    </section>
-
-    <!-- TRANSFORMACAO SECTION -->
-    <section class="transformacao">
-        <div class="container">
-            <h2>Veja a Diferença Real</h2>
-            <p>Imagine acordar todos os dias se sentindo mais confiante, com um visual Hawkins visual impecável que
-                chama atenção positiva por onde você passa.</p>
-            <div class="transformacao-grid">
-                <div class="transformacao-item">
-                    <h3>Autoestima Renovada</h3>
-                    <p>Sinta-se mais confiante e atraente com um corte que valoriza seu rosto</p>
-                </div>
-                <div class="transformacao-item">
-                    <h3>Economia de Tempo</h3>
-                    <p>Cortes que duram mais e são fáceis de manter no dia a dia</p>
-                </div>
-                <div class="transformacao-item">
-                    <h3>Impressão Profissional</h3>
-                    <p>Cause boa impressão em reuniões, encontros e eventos importantes</p>
-                </div>
+            <div class="servico">
+                <h3 class="servico-titulo">🪒 Barba Modelada</h3>
+                <p class="servico-desc">Contornos perfeitos com toalha quente</p>
+            </div>
+            <div class="servico">
+                <h3 class="servico-titulo">💆‍♂️ Massagem Relaxante</h3>
+                <p class="servico-desc">Massagem no couro cabeludo com óleos especiais</p>
+            </div>
+            <div class="servico">
+                <h3 class="servico-titulo">🥃 Bebida Cortesia</h3>
+                <p class="servico-desc">Cerveja, café ou água gelada durante o atendimento</p>
             </div>
         </div>
     </section>
 
-    <!-- DIFERENක
-
-System: ENCIAL UNICO SECTION -->
-    <section class="diferencial">
-        <div class="container">
-            <h2>Extras que Só a GHG Oferece</h2>
-            <p>Além do corte impecável, você recebe <strong>experiências exclusivas</strong> que nenhuma outra barbearia
-                da região oferece:</p>
-            <div class="diferencial-lista">
-                <h3>🎯 Massagem Capilar Relaxante</h3>
-                <h3>🍺 Bebida de Cortesia Premium</h3>
-                <p><strong>Tudo isso incluso em TODOS os atendimentos!</strong></p>
-            </div>
-        </div>
+    <!-- secao de sobre nos   -->
+    <section id="sobre" class="secao-sobre">
+        <h2 class="titulo">Por que a GHG é diferente?</h2>
+        <p class="descricao">Somos mais que uma barbearia. Criamos experiências. Atendimento pontual, ambiente moderno e
+            profissionais experientes fazem parte do nosso compromisso com você.</p>
+        <ul class="lista-diferenciais">
+            <li class="item-diferencial">✅ Garantia de satisfação: ou seu dinheiro de volta</li>
+            <li class="item-diferencial">✅ Cartão fidelidade: 10 cortes = 1 grátis</li>
+            <li class="item-diferencial">✅ Desconto na primeira visita</li>
+        </ul>
     </section>
 
-    <!-- SERVICOS SECTION -->
-    <section class="servicos">
-        <div class="container">
-            <h2>O que Você Recebe</h2>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <h3>✂️ Corte Profissional</h3>
-                    <p>Técnicas modernas adaptadas ao seu rosto e estilo pessoal</p>
-                </div>
-                <div class="servico-card">
-                    <h3>🪒 Barba Modelada</h3>
-                    <p>Navalha quente e produtos premium para acabamento perfeito</p>
-                </div>
-                <div class="servico-card">
-                    <h3>💆‍♂️ Massagem Capilar</h3>
-                    <p>Relaxamento completo com óleos especiais</p>
-                </div>
-                <div class="servico-card">
-                    <h3>🥃 Bebida Cortesia</h3>
-                    <p>Café especial, água gelada ou cerveja artesanal</p>
-                </div>
-            </div>
-        </div>
+    <!-- agendamento -->
+    <section id="contato" class="secao-contato">
+        <h2 class="titulo">Agende seu horário</h2>
+        <p class="descricao">Promoção exclusiva: de R$70 por <strong>R$49</strong> no primeiro corte</p>
+        <a class="botao-agendar" href="./agenda.html">Clique aqui para agendar</a>
     </section>
 
-    <!-- BONUS SECTION -->
-    <section class="bonus">
-        <div class="container">
-            <h2>Bônus Exclusivos</h2>
-            <div class="bonus-grid">
-                <div class="bonus-item">
-                    <h3>Cartão Fidelidade VIP</h3>
-                    <p><strong>10 cortes = 1 totalmente GRÁTIS</strong><br>Economia garantida para clientes fiéis!</p>
-                </div>
-                <div class="bonus-item">
-                    <h3>Desconto Primeira Visita</h3>
-                    <p><strong>10% OFF no primeiro agendamento online</strong><br>Válido apenas para novos clientes!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AUTORIDADE SECTION -->
-    <section class="autoridade">
-        <div class="container">
-            <h2>Nossa Autoridade Comprovada</h2>
-            <p>Números que comprovam nossa excelência e experiência no mercado</p>
-            <div class="autoridade-grid">
-                <div class="stat-item">
-                    <span class="stat-number">7+</span>
-                    <span>Anos de Experiência</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">4.000+</span>
-                    <span>Clientes Satisfeitos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span>Taxa de Satisfação</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">#1</span>
-                    <span>Referência Regional</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OFERTA SECTION -->
-    <section class="oferta">
-        <div class="container">
-            <h2>Oferta Especial Limitada</h2>
-            <div class="price-comparison">
-                <span class="price-old">De R$ 70</span>
-                <span class="price-new">R$ 49</span>
-            </div>
-            <p class="urgency-text">⚡ APENAS para o seu PRIMEIRO agendamento ⚡</p>
-            <p><strong>Economia de R$ 21 + todos os bônus inclusos!</strong></p>
-        </div>
-    </section>
-
-    <!-- GARANTIA SECTION -->
-    <section class="garantia">
-        <div class="container">
-            <h2>Garantia Sem Riscos</h2>
-            <div class="garantia-badge">
-                <p><strong>GARANTIA 100%</strong><br>Se não sair satisfeito,<br>NÃO PAGA!</p>
-            </div>
-            <p><strong>Simples assim. Sem burocracias, sem complicações.</strong></p>
-            <p>Estamos tão confiantes na qualidade do nosso serviço que assumimos todo o risco para você.</p>
-        </div>
-    </section>
-
-    <!-- FAQ SECTION -->
-    <section class="faq">
-        <div class="container">
-            <h2>Dúvidas Frequentes</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="faq-question">O agendamento é obrigatório?</h3>
-                    <p class="faq-answer">Sim, recomendamos agendar para garantir seu horário, mas aceitamos walk-ins
-                        dependendo da disponibilidade.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Quais formas de pagamento são aceitas?</h3>
-                    <p class="faq-answer">Aceitamos dinheiro, cartão de crédito/débito e Pix.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">A garantia cobre quais serviços?</h3>
-                    <p class="faq-answer">A garantia de satisfação cobre todos os serviços de corte e barba, assegurando
-                        sua total satisfação.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA SECTION -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Não Perca Essa Oportunidade!</h2>
-            <p class="urgency-warning">Vagas limitadas! Garanta seu visual perfeito hoje mesmo!</p>
-            <a href="#agenda" class="botao-personalizado">Agendar Agora</a>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-logo">
-            <a href="#">GHG</a>
-        </div>
-        <div class="footer-links">
-            <p>© 2025 Barbearia GHG - Todos os direitos reservados</p>
-        </div>
+    <!-- footer -->
+    <footer class="rodape">
+        <p class="rodape-texto">© 2025 GHG Barbearia - Todos os direitos reservados</p>
     </footer>
+
 </body>
 
 </html>

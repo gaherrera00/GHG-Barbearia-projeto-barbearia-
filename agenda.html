@@ -5,22 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./agenda.css">
-    <title>GHG</title>
+    <title>GHG Barbearia</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="" alt="Logo">
-        </div>
-        <div class="links">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li>Agenda</li>
-                <li><a href="./sobreNos.html">Sobre Nos</a></li>
-            </ul>
+
+    <!-- navbar -->
+    <header class="cabecalho">
+        <div class="container-cabecalho">
+            <h1 class="logo">GHG Barbearia</h1>
+            <nav class="menu">
+                <a class="menu-link" href="./index.html">Home</a>
+                <a class="menu-link" href="./sobreNos.html">Sobre</a>
+                <a class="menu-link-usando">Agendar</a>
+            </nav>
         </div>
     </header>
+
+    <div class="container">
+        <h1>Agende seu Horário</h1>
+        <form id="form-agenda">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required />
+
+            <label for="data">Data do Agendamento</label>
+            <input type="date" id="data" name="data" required />
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required />
+
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico" required>
+                <option value="" disabled selected>Selecione o serviço</option>
+                <option value="corte">Corte de Cabelo</option>
+                <option value="barba">Barba</option>
+                <option value="combo">Corte + Barba</option>
+                <option value="sobrancelha">Sobrancelha</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('form-agenda').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Agendamento realizado com sucesso!');
+            this.reset();
+        });
+    </script>
+
 </body>
 
 </html>
