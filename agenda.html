@@ -3,31 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="agenda.css">
     <title>Agendamento - GHG Barbearia</title>
+    <link rel="stylesheet" href="agenda.css" />
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-              <img src="/img/logo.png" alt="logo" height="40" />
-            </a>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./sobreNos.html">História</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./agenda.html">Agenda</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="/img/logo.png" alt="logo" />
+          </a>
+          <ul class="navbar-nav" id="navbarNav">
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./sobreNos.html">História</a></li>
+            <li><a class="nav-link" href="./agenda.html">Agenda</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main class="container" role="main">
       <h1 class="main-title">Agendamento rápido</h1>
 
@@ -41,7 +34,7 @@
             role="listitem"
             type="button"
           >
-            <img src="gabriel.jpg" alt="Barbeiro Gabriel sorrindo" />
+            <img src="img/gabriel.jpg" alt="Barbeiro Gabriel" />
             <span>Gabriel</span>
           </button>
           <button
@@ -50,18 +43,18 @@
             role="listitem"
             type="button"
           >
-            <img src="gustavo.jpg" alt="Barbeiro Gustavo sorrindo" />
+            <img src="img/gustavo.jpg" alt="Barbeiro Gustavo" />
             <span>Gustavo</span>
           </button>
-          <button
+          <!-- <button
             class="barbeiro-btn"
             aria-label="Selecionar barbeiro Henry"
             role="listitem"
             type="button"
           >
-            <img src="henry.jpg" alt="Barbeiro Henry sorrindo" />
+            <img src="henry.jpg" alt="Barbeiro Henry" />
             <span>Henry</span>
-          </button>
+          </button> -->
         </div>
       </section>
 
@@ -80,12 +73,24 @@
       <section class="section" aria-label="Escolha do horário">
         <h2>Qual horário você prefere?</h2>
         <div class="grid horarios" role="list">
-          <button class="btn-horario" type="button" role="listitem">09:00</button>
-          <button class="btn-horario" type="button" role="listitem">10:00</button>
-          <button class="btn-horario" type="button" role="listitem">11:00</button>
-          <button class="btn-horario" type="button" role="listitem">13:00</button>
-          <button class="btn-horario" type="button" role="listitem">14:00</button>
-          <button class="btn-horario" type="button" role="listitem">15:00</button>
+          <button class="btn-horario" type="button" role="listitem">
+            09:00
+          </button>
+          <button class="btn-horario" type="button" role="listitem">
+            10:00
+          </button>
+          <button class="btn-horario" type="button" role="listitem">
+            11:00
+          </button>
+          <button class="btn-horario" type="button" role="listitem">
+            13:00
+          </button>
+          <button class="btn-horario" type="button" role="listitem">
+            14:00
+          </button>
+          <button class="btn-horario" type="button" role="listitem">
+            15:00
+          </button>
         </div>
       </section>
 
@@ -93,14 +98,24 @@
       <section class="section" aria-label="Escolha do serviço">
         <h2>Qual serviço deseja?</h2>
         <div class="grid servicos" role="list">
-          <button class="servico-btn" type="button" role="listitem">Corte - R$30</button>
-          <button class="servico-btn" type="button" role="listitem">Barba - R$20</button>
-          <button class="servico-btn" type="button" role="listitem">Corte + Barba - R$45</button>
+          <button class="servico-btn" type="button" role="listitem">
+            Corte - R$30
+          </button>
+          <button class="servico-btn" type="button" role="listitem">
+            Barba - R$20
+          </button>
+          <button class="servico-btn" type="button" role="listitem">
+            Corte + Barba - R$45
+          </button>
         </div>
       </section>
 
       <!-- Resumo -->
-      <section class="section resumo" aria-live="polite" aria-label="Resumo do agendamento">
+      <section
+        class="section resumo"
+        aria-live="polite"
+        aria-label="Resumo do agendamento"
+      >
         <h2>Resumo do seu agendamento</h2>
         <ul class="resumo-list">
           <li><strong>Barbeiro:</strong> <span id="resumoBarbeiro">-</span></li>
@@ -109,7 +124,11 @@
           <li><strong>Serviço:</strong> <span id="resumoServico">-</span></li>
           <li><strong>Total:</strong> R$<span id="resumoPreco">0</span></li>
         </ul>
-        <button class="confirmar-btn" type="button" aria-label="Confirmar agendamento">
+        <button
+          class="confirmar-btn"
+          type="button"
+          aria-label="Confirmar agendamento"
+        >
           Confirmar Agendamento
         </button>
       </section>
@@ -173,8 +192,8 @@
 
       // Eventos para selecionar serviço e preço
       const precosServicos = {
-        "Corte": 30,
-        "Barba": 20,
+        Corte: 30,
+        Barba: 20,
         "Corte + Barba": 45,
       };
 
