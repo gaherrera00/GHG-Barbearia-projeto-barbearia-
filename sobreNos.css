@@ -1,86 +1,153 @@
+/* Estilos globais */
+html,
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    text-align: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 
-.cabecalho {
-    background-color: #1a1a1a;
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  font-family: "Arial", sans-serif;
 }
 
-.container-cabecalho {
-    max-width: 1200px;
-    margin: 0 auto;
+.main-container {
+  flex: 1;
 }
 
-.logo {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #e63946;
-    margin: 0;
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu {
-    margin-top: 10px;
+header img {
+  width: 100px;
+  transition: transform 0.3s ease;
 }
 
-.menu-link {
-    color: #f8f9fa;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+header img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-.menu-link:hover {
-    color: #e63946;
-    border-bottom-color: #e63946;
+.navbar-nav {
+  gap: 2rem;
+  margin-right: 6%;
 }
 
-.menu-link-usando {
-    color: #e63946;
+.nav-item {
+  font-size: 1.25rem;
 }
 
-.secao-principal {
-    max-width: 800px;
-    margin: 60px auto 80px auto;
+.nav-link {
+  color: whitesmoke;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.titulo {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+.nav-link:hover {
+  color: #ff0000;
+  transform: scale(1.1);
 }
 
-.descricao {
-    font-size: 1.1rem;
-    color: #444444;
-    margin-bottom: 20px;
-    line-height: 1.8;
+.navbar-brand img {
+  height: 60px;
 }
 
-footer.rodape {
-    background-color: #1a1a1a;
-    color: #f8f9fa;
-    padding: 40px 0;
-    text-align: center;
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
-.rodape-texto {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
+/* Seções da História */
+.section,
+.section1 {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  margin-bottom: 20px;
+}
+
+.section1 {
+  margin-top: 110px;
+}
+
+.image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.4)
+  );
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 700px;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Footer */
+.g2-footer {
+  background-color: #333333;
+  padding: 20px 0;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.g2-footer-content {
+  text-align: center;
+  color: #fff;
+}
+
+.g2-footer-content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.g2-footer-content a:hover {
+  text-decoration: underline;
 }

@@ -1,84 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>GHG Barbearia</title>
-</head>
-
-<body>
-
-    <!-- navbar -->
-    <header class="cabecalho">
-        <div class="container-cabecalho">
-            <h1 class="logo">GHG Barbearia</h1>
-            <nav class="menu">
-                <a class="menu-link-usando">Home</a>
-                <a class="menu-link" href="./sobreNos.html">Sobre</a>
-                <a class="menu-link" href="./agenda.html">Agendar</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia G2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="/favicon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="/img/logo.png" alt="logo" height="40" />
+          </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobreNos.html">História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./agenda.html">Agenda</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
 
-    <!-- secao principal -->
-    <section id="home" class="secao-principal">
-        <div class="container-principal">
-            <h2 class="titulo">Transforme seu visual com estilo e precisão</h2>
-            <p class="descricao">Na GHG, você encontra cortes modernos, barba modelada, massagem relaxante e atendimento
-                VIP.</p>
-            <a class="botao-agendar" href="./agenda.html">Agendar Horário</a>
+    <main>
+        <br>
+        <br>
+      <div class="agendamento">
+        <h2>Agende seu horário conosco!</h2>
+        <p>
+          Escolha o melhor dia e horário para ser atendido com todo o cuidado
+          que você merece.
+        </p>
+        <a href="agenda.html" class="btn btn-danger"> AGENDE AGORA!!!!! </a>
+      </div>
+
+      <h2>Cortes do momento</h2>
+      <div class="servicos">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <h5 class="card-title">Blindado</h5>
+                <img src="/blindado1.jpg" class="card-img-top" alt="Blindado" />
+                <div class="card-body">
+                  <p class="card-text">R$ 50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <h5 class="card-title">Blindado</h5>
+                <img
+                  src="/blindado2.jfif"
+                  class="card-img-top"
+                  alt="Blindado"
+                />
+                <div class="card-body">
+                  <p class="card-text">R$ 50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem">
+                <h5 class="card-title">Blindado</h5>
+                <img src="/blindado3.jpg" class="card-img-top" alt="Blindado" />
+                <div class="card-body">
+                  <p class="card-text">R$ 50</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- secao de servicos -->
-    <section id="servicos" class="secao-servicos">
-        <h2 class="titulo">Nossos Serviços</h2>
-        <div class="lista-servicos">
-            <div class="servico">
-                <h3 class="servico-titulo">✂️ Corte Profissional</h3>
-                <p class="servico-desc">Corte personalizado com atenção aos detalhes</p>
+      <div class="container text-center mt-5">
+        <h2>Depoimentos</h2>
+        <div class="depoimento">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="/ryan.jfif"
+                    alt="MC Ryan"
+                    class="img-fluid rounded-circle"
+                    style="width: 80px; height: 80px; object-fit: cover"
+                  />
+                  <div>Depoimento de MC Ryan</div>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      Barbearia G2 é braba! Corte na régua e atendimento top. Os
+                      caras são visão!
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-            <div class="servico">
-                <h3 class="servico-titulo">🪒 Barba Modelada</h3>
-                <p class="servico-desc">Contornos perfeitos com toalha quente</p>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="/kevin.jfif"
+                    alt="MC Kevin"
+                    class="img-fluid rounded-circle"
+                    style="width: 80px; height: 80px; object-fit: cover"
+                  />
+                  <div>Depoimento de MC Kevin</div>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      Barbearia G2 é outro nível! Corte chave e atendimento
+                      monstro. Sai de lá transformado!
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-            <div class="servico">
-                <h3 class="servico-titulo">💆‍♂️ Massagem Relaxante</h3>
-                <p class="servico-desc">Massagem no couro cabeludo com óleos especiais</p>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="/ig.jpg"
+                    alt="MC IG"
+                    class="img-fluid rounded-circle"
+                    style="width: 80px; height: 80px; object-fit: cover"
+                  />
+                  <div>Depoimento de MC IG</div>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      Barbearia G2 é pesada! Corte fino e trato de responsa. Os
+                      cria deixa a gente chavão!
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-            <div class="servico">
-                <h3 class="servico-titulo">🥃 Bebida Cortesia</h3>
-                <p class="servico-desc">Cerveja, café ou água gelada durante o atendimento</p>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="/lan.avif"
+                    alt="MC LAN"
+                    class="img-fluid rounded-circle"
+                    style="width: 80px; height: 80px; object-fit: cover"
+                  />
+                  <div>Depoimento de MC LAN</div>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      Barbearia G2 é o pique! Corte monstro e atendimento zika.
+                      A nave sai pronta!
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- secao de sobre nos   -->
-    <section id="sobre" class="secao-sobre">
-        <h2 class="titulo">Por que a GHG é diferente?</h2>
-        <p class="descricao">Somos mais que uma barbearia. Criamos experiências. Atendimento pontual, ambiente moderno e
-            profissionais experientes fazem parte do nosso compromisso com você.</p>
-        <ul class="lista-diferenciais">
-            <li class="item-diferencial">✅ Garantia de satisfação: ou seu dinheiro de volta</li>
-            <li class="item-diferencial">✅ Cartão fidelidade: 10 cortes = 1 grátis</li>
-            <li class="item-diferencial">✅ Desconto na primeira visita</li>
-        </ul>
-    </section>
+      <div class="fotos">
+        <h2>Nossas Franquias</h2>
+        <div class="card mb-3">
+          <img src="/barber1.jpg" class="card-img-top" alt="Campinas" />
+          <div class="card-body">
+            <h5 class="card-title">Franquia de Campinas</h5>
+            <p class="card-text">
+              Um ex-cliente virou franqueado e transformou a unidade em um ponto
+              elegante no Cambuí, com foco em networking e cortes modernos.
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <img src="/barber2.jpg" class="card-img-top" alt="Santos" />
+          <div class="card-body">
+            <h5 class="card-title">Franquia de Santos</h5>
+            <p class="card-text">
+              Dois irmãos surfistas abriram uma barbearia com clima praiano,
+              café artesanal e eventos culturais, a poucos passos da praia.
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <img src="/barber3.jpg" class="card-img-top" alt="Ribeirão Preto" />
+          <div class="card-body">
+            <h5 class="card-title">Franquia de Ribeirão Preto</h5>
+            <p class="card-text">
+              Um barbeiro local famoso abriu a unidade com estilo rústico e vibe
+              acolhedora, atraindo de fazendeiros a universitários.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- agendamento -->
-    <section id="contato" class="secao-contato">
-        <h2 class="titulo">Agende seu horário</h2>
-        <p class="descricao">Promoção exclusiva: de R$70 por <strong>R$49</strong> no primeiro corte</p>
-        <a class="botao-agendar" href="./agenda.html">Clique aqui para agendar</a>
-    </section>
+      <div class="resumo">
+        <p>
+          Nossa barbearia é mais do que um lugar para cortar cabelo — é uma
+          experiência. Com um ambiente moderno e estiloso, atendimento de
+          qualidade e serviços que vão do clássico ao mais atualizado, nós nos
+          destacamos no mercado. Com franquias em Campinas, Santos e Ribeirão
+          Preto, cada unidade tem sua identidade própria, mas todas compartilham
+          a mesma essência: um espaço onde nossos clientes saem não só com um
+          corte impecável, mas também com uma experiência única. Seja para um
+          degradê afiado, barba alinhada ou aquele papo descontraído, nossa
+          barbearia é o ponto de encontro de quem valoriza estilo e qualidade.
+          🔥 Agende seu horário e eleve seu visual ao próximo nível com a gente!
+        </p>
+      </div>
 
-    <!-- footer -->
-    <footer class="rodape">
-        <p class="rodape-texto">© 2025 GHG Barbearia - Todos os direitos reservados</p>
+      <div class="agendamento">
+        <h2>Agende seu horário conosco!</h2>
+        <p>
+          Escolha o melhor dia e horário para ser atendido com todo o cuidado
+          que você merece.
+        </p>
+        <a href="agenda.html" class="btn btn-danger"> AGENDE AGORA!!!!! </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="g2-footer">
+      <div class="g2-footer-content">
+        <p>&copy; 2025 Barbearia G2. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
