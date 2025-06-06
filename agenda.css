@@ -140,6 +140,11 @@ body {
   border-color: #d62d42;
 }
 
+.btn-horario.desabilitado {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* Data input */
 #dataSelecionada {
   width: 100%;
