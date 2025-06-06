@@ -86,7 +86,12 @@ h2::after {
 }
 
 .agendamento {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/selecao.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
+
   padding: 2rem;
   background-color: #0a0a0a;
   border: 2px solid #d62d42;
