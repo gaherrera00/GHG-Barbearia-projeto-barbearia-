@@ -1,0 +1,21 @@
+.g2-footer {
+  background-color: #333333;
+  padding: 20px 0;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.g2-footer-content {
+  text-align: center;
+  color: #fff;
+}
+
+.g2-footer-content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.g2-footer-content a:hover {
+  text-decoration: underline;
+}

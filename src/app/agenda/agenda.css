@@ -1,0 +1,117 @@
+body {
+    background-color: #121212;
+    padding: 0;
+    color: #f8f9fa;
+}
+
+.custom-container {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-custom {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #4e4e4e;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #4e4e4e;
+    transform: translateY(-2px);
+}
+
+.custom-card {
+    background-color: #2d2d2d;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-title {
+    color: #4ecdc4;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+    box-shadow: 0 0 0 2px #28a745, 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+
+
+.selected-item {
+    animation: pulse 0.5s ease;
+}
+
+.section-spacing {
+    margin-bottom: 2.5rem;
+}
+
+.barbeiros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.barbeiros,
+.data,
+.horario,
+.servico,
+.resumo {
+    margin-top: 100px;
+}
+
+.barbeiros button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    border: none;
+}
+
+.barbeiros button img {
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+
+.barbeiros button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.barbeiros button.btn-outline-light {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.barbeiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barbeiros h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.calendario{
+    margin-left: 30%;
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    .time-slot {
+        padding: 0.25rem;
+        font-size: 0.9rem;
+    }
+    .calendario{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+}
